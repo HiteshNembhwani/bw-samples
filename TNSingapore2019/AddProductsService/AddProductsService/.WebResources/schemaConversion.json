@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/AddProductsService/Service Descriptors/addproductsservice.AddProducts-Products.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1553759607456"
+}]}

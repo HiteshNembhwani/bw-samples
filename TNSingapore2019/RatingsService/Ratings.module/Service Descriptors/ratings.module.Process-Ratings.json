@@ -1,0 +1,107 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/ratings" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-ratings",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Ratings"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-ratings",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a Ratings to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Ratings"
+            }
+          }
+        }
+      }
+    },
+    "/ratings/{reviewID}" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-ratings",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "reviewID",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Ratings to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Ratings"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Record" : {
+      "type" : "object",
+      "properties" : {
+        "ReviewID" : {
+          "type" : "integer"
+        },
+        "ProductID" : {
+          "type" : "integer"
+        },
+        "Rating" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "Ratings" : {
+      "type" : "object",
+      "properties" : {
+        "Record" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Record",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}

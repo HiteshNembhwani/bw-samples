@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:tibprop="http://ns.tibco.com/bw/property" xmi:id="_OU2PcFE9Eemb67hp26__Yg" targetNamespace="http://tns.tibco.com/bw/composite/ReviewsService.module" name="ReviewsService.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_7xqLoFE9Eemb67hp26__Yg" name="reviews" promote="ComponentProcess/reviews">
+    <sca:interface.wsdl xmi:id="_7xt2AFE9Eemb67hp26__Yg" interface="http://xmlns.example.com/20190328150821PLT#wsdl.interface(reviews)" scaext:wsdlLocation="../Processes/reviewsservice/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_7xyugFE9Eemb67hp26__Yg" name="RestService" path="/reviews" docBasePath="http://localhost:7777/ReviewsService.module" docResourcePath="Reviews" basePath="/" connector="reviewsservice.module.Reviews" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/reviewsservice.module.Process-Reviews.json">
+      <operation xmi:id="_7xzVkFE9Eemb67hp26__Yg" operationName="post" nickname="post-reviews" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_7xzVkVE9Eemb67hp26__Yg" operationName="get" nickname="get-reviews" httpMethod="GET" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_7yB_EFE9Eemb67hp26__Yg"/>
+      <advancedConfig xmi:id="_7xyugVE9Eemb67hp26__Yg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_7xz8oFE9Eemb67hp26__Yg" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_C2FPoFFJEemKZI4J8Ymc1Q" name="reviews1" promote="ComponentProcess/reviews1">
+    <sca:interface.wsdl xmi:id="_C2JhEFFJEemKZI4J8Ymc1Q" interface="http://xmlns.example.com/20190328150821PLT#wsdl.interface(reviews1)" scaext:wsdlLocation="../Processes/reviewsservice/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_C2MkYFFJEemKZI4J8Ymc1Q" name="RestService1" path="/reviews/{productId}" docBasePath="http://localhost:7777/ReviewsService.module" docResourcePath="Reviews" basePath="/" connector="reviewsservice.module.Reviews" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/reviewsservice.module.Process-Reviews.json">
+      <operation xmi:id="_C2NygFFJEemKZI4J8Ymc1Q" operationName="get" nickname="get-reviews" httpMethod="GET" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_C2PAoFFJEemKZI4J8Ymc1Q">
+        <parameterMapping xmi:id="_C2PnsFFJEemKZI4J8Ymc1Q" parameterName="productId" parameterType="Path" required="true"/>
+      </parameters>
+      <advancedConfig xmi:id="_C2MkYVFJEemKZI4J8Ymc1Q" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_C2NygVFJEemKZI4J8Ymc1Q" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_OnTRYFE9Eemb67hp26__Yg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_OnYJ4FE9Eemb67hp26__Yg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_OnamIFE9Eemb67hp26__Yg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_OncbUFE9Eemb67hp26__Yg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_One3kFE9Eemb67hp26__Yg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Onh64FE9Eemb67hp26__Yg" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_Onk-MFE9Eemb67hp26__Yg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_alpSsFE9Eemb67hp26__Yg" name="db_user" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_eRXWgFE9Eemb67hp26__Yg" name="db_password" type="tibprop:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hBhJ8FE9Eemb67hp26__Yg" name="db_url" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_OdsCYFE9Eemb67hp26__Yg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OdsCYVE9Eemb67hp26__Yg" processName="reviewsservice.module.Process"/>
+    <sca:service xmi:id="_7xmhQFE9Eemb67hp26__Yg" name="reviews">
+      <sca:interface.wsdl xmi:id="_7xnIUFE9Eemb67hp26__Yg" interface="http://xmlns.example.com/20190328150821PLT#wsdl.interface(reviews)" scaext:wsdlLocation="../Processes/reviewsservice/module/Process.bwp"/>
+    </sca:service>
+    <sca:service xmi:id="_C2CMUFFJEemKZI4J8Ymc1Q" name="reviews1">
+      <sca:interface.wsdl xmi:id="_C2DacFFJEemKZI4J8Ymc1Q" interface="http://xmlns.example.com/20190328150821PLT#wsdl.interface(reviews1)" scaext:wsdlLocation="../Processes/reviewsservice/module/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

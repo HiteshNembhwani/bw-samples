@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_Gw4iMFFSEemKZI4J8Ymc1Q" targetNamespace="http://tns.tibco.com/bw/composite/Ratings.module" name="Ratings.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_LXdu8FFWEemKZI4J8Ymc1Q" name="ratings" promote="ComponentProcess/ratings">
+    <sca:interface.wsdl xmi:id="_LXdu9FFWEemKZI4J8Ymc1Q" interface="http://xmlns.example.com/20190328173749PLT#wsdl.interface(ratings)" scaext:wsdlLocation="../Processes/ratings/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_LXeWAFFWEemKZI4J8Ymc1Q" name="RestService" path="/ratings" docBasePath="http://localhost:7777/Ratings.module" docResourcePath="Ratings" basePath="/" connector="ratings.module.Ratings" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/ratings.module.Process-Ratings.json">
+      <operation xmi:id="_LXe9EFFWEemKZI4J8Ymc1Q" operationName="post" nickname="post-ratings" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_LXe9EVFWEemKZI4J8Ymc1Q" operationName="get" nickname="get-ratings" httpMethod="GET" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_LX3-oFFWEemKZI4J8Ymc1Q"/>
+      <advancedConfig xmi:id="_LXeWAVFWEemKZI4J8Ymc1Q" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_LXe9ElFWEemKZI4J8Ymc1Q" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_PtrDwVFiEemKZI4J8Ymc1Q" name="ratings1" promote="ComponentProcess/ratings1">
+    <sca:interface.wsdl xmi:id="_PtrDxVFiEemKZI4J8Ymc1Q" interface="http://xmlns.example.com/20190328173749PLT#wsdl.interface(ratings1)" scaext:wsdlLocation="../Processes/ratings/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_PtsR4FFiEemKZI4J8Ymc1Q" name="RestService1" path="/ratings/{reviewID}" docBasePath="http://localhost:7777/Ratings.module" docResourcePath="Ratings" basePath="/" connector="ratings.module.Ratings" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/ratings.module.Process-Ratings.json">
+      <operation xmi:id="_Pts48FFiEemKZI4J8Ymc1Q" operationName="get" nickname="get-ratings" httpMethod="GET" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_Pt-lwFFiEemKZI4J8Ymc1Q">
+        <parameterMapping xmi:id="_Pt-lwVFiEemKZI4J8Ymc1Q" parameterName="reviewID" parameterType="Path" required="true"/>
+      </parameters>
+      <advancedConfig xmi:id="_PtsR4VFiEemKZI4J8Ymc1Q" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Pts48VFiEemKZI4J8Ymc1Q" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_G5cBQFFSEemKZI4J8Ymc1Q" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_G6HWsFFSEemKZI4J8Ymc1Q" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_G6piMFFSEemKZI4J8Ymc1Q" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_G7Ni4FFSEemKZI4J8Ymc1Q" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_G7vuYFFSEemKZI4J8Ymc1Q" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_G8R54FFSEemKZI4J8Ymc1Q" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_G80scFFSEemKZI4J8Ymc1Q" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_zNCAsFFUEemKZI4J8Ymc1Q" name="db_url" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9jO_gFFUEemKZI4J8Ymc1Q" name="db_username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_CHZHMFFVEemKZI4J8Ymc1Q" name="db_password" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_Gzi0oFFSEemKZI4J8Ymc1Q" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Gzi0oVFSEemKZI4J8Ymc1Q" processName="ratings.module.Process"/>
+    <sca:service xmi:id="_LXdH4FFWEemKZI4J8Ymc1Q" name="ratings">
+      <sca:interface.wsdl xmi:id="_LXdH4VFWEemKZI4J8Ymc1Q" interface="http://xmlns.example.com/20190328173749PLT#wsdl.interface(ratings)"/>
+    </sca:service>
+    <sca:service xmi:id="_PtqcsFFiEemKZI4J8Ymc1Q" name="ratings1">
+      <sca:interface.wsdl xmi:id="_PtrDwFFiEemKZI4J8Ymc1Q" interface="http://xmlns.example.com/20190328173749PLT#wsdl.interface(ratings1)" scaext:wsdlLocation="../Processes/ratings/module/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

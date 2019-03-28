@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/Ratings.module/Service Descriptors/ratings.module.Process-Ratings.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.tibco.com/namespaces/jdbc/utils/tabletoxml/1553776202212"
+}]}

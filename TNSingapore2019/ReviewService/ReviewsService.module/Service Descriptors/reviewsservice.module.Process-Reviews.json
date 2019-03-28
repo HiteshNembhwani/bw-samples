@@ -1,0 +1,123 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/reviews" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-reviews",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Reviews"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-reviews",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a Reviews to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Reviews"
+            }
+          }
+        }
+      }
+    },
+    "/reviews/{productId}" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-reviews",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "productId",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Reviews to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Reviews"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Reviews" : {
+      "type" : "object",
+      "required" : [ "Review" ],
+      "properties" : {
+        "Review" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Review",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "Rating" : {
+      "type" : "object",
+      "properties" : {
+        "ProductID" : {
+          "type" : "integer"
+        },
+        "ReviewText" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Review" : {
+      "type" : "object",
+      "properties" : {
+        "ProductID" : {
+          "type" : "integer"
+        },
+        "ReviewText" : {
+          "type" : "string"
+        },
+        "Rating" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Rating",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}

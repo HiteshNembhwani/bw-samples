@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/addproductsservice.AddProducts-Products.json",
+        "type": "generated"
+    }]
+}

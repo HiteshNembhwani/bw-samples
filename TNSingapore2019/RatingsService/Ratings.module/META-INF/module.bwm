@@ -40,6 +40,8 @@
   <sca:property xmi:id="_zNCAsFFUEemKZI4J8Ymc1Q" name="db_url" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_9jO_gFFUEemKZI4J8Ymc1Q" name="db_username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_CHZHMFFVEemKZI4J8Ymc1Q" name="db_password" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_x0Y84FRAEem2z4f29uvxsw" name="ratingsPort" type="XMLSchema:int" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_17bqwFRAEem2z4f29uvxsw" name="ratingsServiceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_Gzi0oFFSEemKZI4J8Ymc1Q" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Gzi0oVFSEemKZI4J8Ymc1Q" processName="ratings.module.Process"/>
     <sca:service xmi:id="_LXdH4FFWEemKZI4J8Ymc1Q" name="ratings">

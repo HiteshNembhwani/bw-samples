@@ -2,5 +2,7 @@
 <jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_7x2_8VE9Eemb67hp26__Yg" name="reviewsservice.module.Reviews" type="httpconnector:HttpConnectorConfiguration">
   <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_7x3nAFE9Eemb67hp26__Yg">
     <substitutionBindings xmi:id="_7x3nAVE9Eemb67hp26__Yg" template="host" propName="BW.HOST.NAME"/>
+    <substitutionBindings xmi:id="_KabGMFQ7Eem2z4f29uvxsw" template="svcRegServiceName" propName="reviewsServiceName"/>
+    <substitutionBindings xmi:id="_Oj-VgFQ7Eem2z4f29uvxsw" template="port" propName="reviews_ServicePort"/>
   </jndi:configuration>
 </jndi:namedResource>

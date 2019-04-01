@@ -40,6 +40,11 @@
   <sca:property xmi:id="_alpSsFE9Eemb67hp26__Yg" name="db_user" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_eRXWgFE9Eemb67hp26__Yg" name="db_password" type="tibprop:password" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_hBhJ8FE9Eemb67hp26__Yg" name="db_url" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3-yRUFQ6Eem2z4f29uvxsw" name="ratingsHost" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_7d2ZMFQ6Eem2z4f29uvxsw" name="ratings_port" type="XMLSchema:int" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_B9CqMFQ7Eem2z4f29uvxsw" name="ratingsServiceName" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_MdMPMFQ7Eem2z4f29uvxsw" name="reviewsServiceName" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Rs84oFQ7Eem2z4f29uvxsw" name="reviews_ServicePort" type="XMLSchema:int" scaext:simpleValue="" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_OdsCYFE9Eemb67hp26__Yg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OdsCYVE9Eemb67hp26__Yg" processName="reviewsservice.module.Process"/>
     <sca:service xmi:id="_7xmhQFE9Eemb67hp26__Yg" name="reviews">

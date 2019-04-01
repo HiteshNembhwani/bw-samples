@@ -1,0 +1,96 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Ratings"
+  },
+  "host" : "localhost:8080",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/ratings" : {
+      "get" : {
+        "tags" : [ "Ratings" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Sample Description",
+            "schema" : {
+              "$ref" : "#/definitions/Ratings"
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Ratings" ],
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "Ratings",
+          "description" : "Sample Description",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Ratings"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Sample Description",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/ratings/{reviewID}" : {
+      "get" : {
+        "tags" : [ "Ratings" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "reviewID",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Sample Description",
+            "schema" : {
+              "$ref" : "#/definitions/Ratings"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Ratings" : {
+      "type" : "object",
+      "properties" : {
+        "Record" : {
+          "type" : "array",
+          "items" : {
+            "properties" : {
+              "Rating" : {
+                "type" : "integer",
+                "format" : "int32"
+              },
+              "ProductID" : {
+                "type" : "integer",
+                "format" : "int32"
+              },
+              "ReviewID" : {
+                "type" : "integer",
+                "format" : "int32"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

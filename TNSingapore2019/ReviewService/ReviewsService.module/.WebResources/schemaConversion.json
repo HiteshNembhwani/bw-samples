@@ -1,5 +1,12 @@
-{"records": [{
-    "jsonSchemaLocation": "/ReviewsService.module/Service Descriptors/reviewsservice.module.Process-Reviews.json",
-    "conversionType": "linked",
-    "xsdSchemaTargetNamespace": "http://www.tibco.com/namespaces/jdbc/utils/tabletoxml/1553766066983"
-}]}
+{"records": [
+    {
+        "jsonSchemaLocation": "/ReviewsService.module/Service Descriptors/reviewsservice.module.Process-Reviews.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.tibco.com/namespaces/jdbc/utils/tabletoxml/1553766066983"
+    },
+    {
+        "jsonSchemaLocation": "/ReviewsService.module/Service Descriptors/ratings.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1554094616123Converted/JsonSchema"
+    }
+]}

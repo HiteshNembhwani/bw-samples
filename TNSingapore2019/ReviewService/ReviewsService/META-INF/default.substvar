@@ -115,7 +115,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//ratings_port</name>
-			<value>9090</value>
+			<value>9002</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -139,7 +139,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//reviews_ServicePort</name>
-			<value>9010</value>
+			<value>9001</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>

@@ -7,6 +7,7 @@
     xmlns:ns="http://www.tibco.com/pe/EngineTypes"
     xmlns:ns0="http://xmlns.example.com/20190328150821PLT"
     xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jdbc+b5a2944e-1152-4237-9a55-b80f137fbe6b+input"
+    xmlns:ns10="/T1554094616123Converted/JsonSchema"
     xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jdbc"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.update"
     xmlns:ns4="http://www.tibco.com/namespaces/tnt/plugins/jdbc+349a8768-2c49-4ad7-a3ff-6a1c1af68eab+input"
@@ -14,6 +15,7 @@
     xmlns:ns6="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.JDBCQuery"
     xmlns:ns7="http://www.tibco.com/namespaces/tnt/plugins/jdbc+b822648d-067a-4194-bc8b-7cfb191bd688+input"
     xmlns:ns8="http://www.tibco.com/namespaces/tnt/plugins/jdbc+b822648d-067a-4194-bc8b-7cfb191bd688+output"
+    xmlns:ns9="http://www.example.com/namespaces/tns/1553839511008"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -1535,8 +1537,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.2/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="245"
-                                    xsi:type="notation:Bounds" y="10"/>
+                                    x="302"
+                                    xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
                                     <children type="4002 bw.jdbc.JDBCQuery">
@@ -1616,8 +1618,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.2/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="102"
-                                    width="381" xsi:type="notation:Bounds"/>
+                                    height="116"
+                                    width="504" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1636,7 +1638,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.2/@activity"/>
 
                                     <layoutConstraint
-                                    height="102"
+                                    height="114"
                                     width="384"
                                     x="15" xsi:type="notation:Bounds"/>
                                     </children>
@@ -1651,7 +1653,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.2/@activity"/>
 
                                     <layoutConstraint
-                                    height="126"
+                                    height="138"
                                     width="424" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1709,7 +1711,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.2"/>
                                     <layoutConstraint
-                                    height="145"
+                                    height="157"
                                     width="486"
                                     x="2"
                                     xsi:type="notation:Bounds" y="389"/>
@@ -1724,7 +1726,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="566" width="561" xsi:type="notation:Bounds"/>
+                                    height="578" width="626" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1739,7 +1741,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="605"
-                                    width="515" xsi:type="notation:Bounds"/>
+                                    width="638" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1767,7 +1769,7 @@
             </children>
             <styles fontName=".SF NS Text" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="681" width="860" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="681" width="983" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1850,6 +1852,8 @@
     <bpws:import importType="http://www.w3.org/2001/XMLSchema"
         location="../../../Schemas/reviews.xsd" namespace="http://www.tibco.com/namespaces/jdbc/utils/tabletoxml/1553766066983"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://xmlns.example.com/Reviews/parameters"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.com/namespaces/tns/1553839511008"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1554094616123Converted/JsonSchema"/>
     <bpws:partnerLinks>
         <bpws:partnerLink myRole="use" name="reviews"
             partnerLinkType="ns0:partnerLinkType"

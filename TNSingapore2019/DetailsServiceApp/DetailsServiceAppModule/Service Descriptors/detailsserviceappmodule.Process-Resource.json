@@ -1,0 +1,110 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/details" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-resource",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/ProductDetails"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      },
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-resource",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a ProductDetails to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/ProductDetails"
+            }
+          }
+        }
+      }
+    },
+    "/details/{id}" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-details",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a ProductDetails to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/ProductDetails"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ProductDetails" : {
+      "type" : "object",
+      "properties" : {
+        "Record" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Record",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "Record" : {
+      "type" : "object",
+      "properties" : {
+        "ProductID" : {
+          "type" : "integer"
+        },
+        "Category" : {
+          "type" : "string"
+        },
+        "Price" : {
+          "type" : "integer"
+        },
+        "Quantity" : {
+          "type" : "integer"
+        },
+        "Vendor" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/DetailsServiceAppModule/Service Descriptors/detailsserviceappmodule.Process-Resource.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.tibco.com/namespaces/jdbc/utils/tabletoxml/1554101923725"
+}]}

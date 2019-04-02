@@ -1,0 +1,21 @@
+Manifest-Version: 1.0.0.201904021031
+Bundle-SymbolicName: ReviewsService.module
+Bundle-ManifestVersion: 2
+TIBCO-BW-Edition: bwcf
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.jdbc)",com.tibco.bw.sharedresource.m
+ odel; filter:="(name=bw.httpclient)",com.tibco.bw.sharedresource.mode
+ l; filter:="(name=bw.httpconnector)",com.tibco.bw.sharedresource.mode
+ l; filter:="(name=bw.jdbc)",com.tibco.bw.binding.model; filter:="(nam
+ e=bw.rest)",com.tibco.bw.binding.model; filter:="(name=bw.rest.refere
+ nce.binding)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 2.4.3 V9 2019-02-06
+Bundle-Name: ReviewsService Module
+Bundle-Version: 1.0.0.201904021031
+Bundle-ClassPath: .
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+

@@ -83,7 +83,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//db_user</name>
-			<value>%%db_user%%</value>
+			<value>#db_username#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -91,7 +91,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//db_url</name>
-			<value>%%db_url%%</value>
+			<value>#db_url#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -107,43 +107,43 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//ratingsHost</name>
-			<value>localhost</value>
+			<value>#ratingsHost#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//ratings_port</name>
-			<value>9002</value>
+			<value>#ratingsPort#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//ratingsServiceName</name>
-			<value>ProductRatings</value>
+			<value>#ratingsServiceName#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//reviewsServiceName</name>
-			<value>ProductReviewsService</value>
+			<value>#reviewsServiceName#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//ReviewsService.module//reviews_ServicePort</name>
-			<value>9001</value>
+			<value>#reviewsServicePort#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 	</globalVariables>
 </repository>

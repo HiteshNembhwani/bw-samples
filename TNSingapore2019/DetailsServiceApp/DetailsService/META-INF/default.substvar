@@ -59,35 +59,35 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//DetailsServiceAppModule//detailsServiceName</name>
-			<value>ProductDetailsService</value>
+			<value>#detailsServiceName#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//DetailsServiceAppModule//db_username</name>
-			<value>bwceuser</value>
+			<value>#db_username#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//DetailsServiceAppModule//db_url</name>
-			<value>jdbc:postgresql://localhost:5432/products</value>
+			<value>#db_url#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//DetailsServiceAppModule//servicePort</name>
-			<value>9003</value>
+			<value>#servicePort#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//DetailsServiceAppModule//db_password</name>

@@ -59,19 +59,19 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//Ratings.module//db_url</name>
-			<value>jdbc:postgresql://localhost:5432/products</value>
+			<value>#db_url#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//Ratings.module//db_username</name>
-			<value>bwceuser</value>
+			<value>#db_user#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//Ratings.module//db_password</name>
@@ -83,19 +83,19 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//Ratings.module//ratingsPort</name>
-			<value>9002</value>
+			<value>#ratingsPort#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//Ratings.module//ratingsServiceName</name>
-			<value>ProductRatings</value>
+			<value>#ratingsServiceName#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 	</globalVariables>
 </repository>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Products1"
+	xmlns:tns="http://www.example.org/Products" elementFormDefault="qualified">
+	<element name="Product">
+		<complexType>
+			<sequence>
+				<element name="id" type="string" />
+				<element name="details">
+					<complexType>
+						<sequence>
+							<element maxOccurs="1" minOccurs="0" name="Category"
+								type="string" />
+							<element maxOccurs="1" minOccurs="0" name="Price" type="int" />
+							<element maxOccurs="1" minOccurs="0" name="Quantity"
+								type="integer" />
+							<element maxOccurs="1" minOccurs="0" name="Vendor" type="string" />
+						</sequence>
+					</complexType>
+				</element>
+				<element maxOccurs="unbounded" minOccurs="0" name="Ratings">
+					<complexType>
+						<sequence>
+							<element maxOccurs="1" minOccurs="0" name="Rating" type="int" />
+						</sequence>
+					</complexType>
+				</element>
+				<element name="Reviews">
+					<complexType>
+						<sequence>
+							<element maxOccurs="unbounded" minOccurs="1" name="Reviews">
+								<complexType>
+									<sequence>
+										<element maxOccurs="1" minOccurs="0" name="ReviewText"
+											type="string" />
+									</sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
